@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="ip" />
+<button type="button" onclick="uuu()"> Change</button>;
+<p id="result"></p>
+
+<script>
+function uuu(){
+
+    let eng=['dog','cat','chicken'];
+    let vnm=['cho','meo','ga'];
+
+    let a=document.getElementById('ip').value;
+    for(let i=0; i< eng.length; i++){
+
+        if( eng.indexOf(a)!==-1) {
+            document.getElementById('result').innerHTML = vnm[eng.indexOf(a)];
+        }
+        else {
+            document.getElementById('result').innerHTML='Not in the list';
+        }
+    }
+}
+
+</script>
+</body>
+</html>
